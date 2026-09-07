@@ -11,21 +11,10 @@ namespace BattleArena
     {
         static void Main(string[] args)
         {
-            Warrior Kupal = new Warrior();
-            Kupal.Name = "KupalsiAgoot";
-            Kupal.Health = 300;
-            Kupal.AttackPower = 50;
+            Warrior Kupal = new Warrior("KupalAgoot", 300, 50);
+            Warrior Orbading = new Warrior("Orbading", 10, 51);
 
-            Warrior Orbading = new Warrior();
-            Orbading.Name = "Orbading";
-            Orbading.Health = 10;
-            Orbading.AttackPower = 1;
-
-            Warrior Dedong = new Warrior();
-            Dedong.Name = "Dedong";
-            Dedong.Health = 100;
-            Dedong.AttackPower = 20;
-
+            Warrior Dedong = new Warrior("Dedong", 100, 20);
 
             Console.WriteLine($"{Kupal.Name} has " +
                 $"{Kupal.Health} health and {Kupal.AttackPower} attack power.");
