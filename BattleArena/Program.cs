@@ -1,36 +1,36 @@
-﻿using BattleArena.Warriors;
+﻿using BattleArena.Enums;
+using BattleArena.Warriors.Characters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using static BattleArena.Warriors.Marksman;
-
 
 namespace BattleArena
 {
-    internal partial class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            var atlas = new Tank("atlas", 300, 15, 5);
-            var Orbeast = new Marksman("Orbeast", 150, 32, 10 );
-            var balmond = new Fighter("balmond", 200, 20, 7);
+            var Agoot = new Agoot(100, 30, 10, 5, TeamType.A);
+            var Orbeast = new Orbeast(200, 15, 20, 8, TeamType.B);
+            var Balmond = new Balmond(150, 20, 15, 7, TeamType.A);
 
-            atlas.DisplayStatus();
+            Agoot.DisplayStatus();
             Orbeast.DisplayStatus();
-            balmond.DisplayStatus();
+            Balmond.DisplayStatus();
 
-            while (atlas.IsAlive && Orbeast.IsAlive)
+            while (Agoot.IsAlive && Orbeast.IsAlive)
             {
-                Console.WriteLine("\n\n====================================");
-                atlas.Attack(Orbeast);
-                Thread.Sleep(1000);
-                Orbeast.Attack(atlas);
-                Thread.Sleep(1000);
-                Console.WriteLine("------------------------------------");
-
+                Console.WriteLine("\n\n=================================================");
+                Agoot.Attack(Orbeast);
+                Orbeast.DisplayStatus();
+                Console.WriteLine("-------------------------------------------------");
+                Thread.Sleep(2000);
+                Orbeast.Attack(Agoot);
+                Agoot.DisplayStatus();
+                Thread.Sleep(2000);
             }
 
             Console.ReadKey();
