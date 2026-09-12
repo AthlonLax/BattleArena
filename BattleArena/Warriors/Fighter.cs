@@ -20,14 +20,14 @@ namespace BattleArena.Warriors
         {
             var totalDamage = target.AttackPower + SwordDamage;
             TakeDamage(totalDamage);
-            Console.WriteLine($"\t->{Name}: Titirahin kita {target.Name}!");
+            Console.WriteLine($"\t->{Name}: bleed damage {target.Name}!");
             Thread.Sleep(1000);
 
-            Console.WriteLine($"\t->{target.Name}: Ayawkol! ");
+            Console.WriteLine($"\t->{target.Name}: ugh ugh! ");
             Thread.Sleep(1000); 
 
             if (target.IsAlive)
-                Console.WriteLine($"\t->{target.Name}: yown! ");
+                Console.WriteLine($"\t->{target.Name}: revive! ");
             Thread.Sleep(1000);
 
             Console.WriteLine($"\t------- {target.Name} ------");

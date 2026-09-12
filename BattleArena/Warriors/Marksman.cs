@@ -19,12 +19,12 @@ namespace BattleArena.Warriors
         {
             var totalDamage = target.AttackPower + ArrowDamage;
             TakeDamage(totalDamage);
-            Console.WriteLine($"\t->{Name}: Tatalsikan kita {target.Name}!");
+            Console.WriteLine($"\t->{Name}: fire arrow {target.Name}!");
             Thread.Sleep(1000);
-            Console.WriteLine($"\t->{target.Name}: sige pa! ");
+            Console.WriteLine($"\t->{target.Name}: ahh! ");
             Thread.Sleep(1000);
             if (target.IsAlive)
-                Console.WriteLine($"\t->{target.Name}: yown ");
+                Console.WriteLine($"\t->{target.Name}: savage ");
                 Thread.Sleep(1000);
             Console.WriteLine($"\t------- {target.Name} ------");
             Console.WriteLine($"\t    * DamageTaken: {totalDamage}");

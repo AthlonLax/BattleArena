@@ -14,20 +14,20 @@ namespace BattleArena
     {
         static void Main(string[] args)
         {
-            var Medillo = new Tank("Medillo", 300, 15, 5);
+            var atlas = new Tank("atlas", 300, 15, 5);
             var Orbeast = new Marksman("Orbeast", 150, 32, 10 );
-            var Dedong = new Fighter("Dedong", 200, 20, 7);
+            var balmond = new Fighter("balmond", 200, 20, 7);
 
-            Medillo.DisplayStatus();
+            atlas.DisplayStatus();
             Orbeast.DisplayStatus();
-            Dedong.DisplayStatus();
+            balmond.DisplayStatus();
 
-            while (Medillo.IsAlive && Orbeast.IsAlive)
+            while (atlas.IsAlive && Orbeast.IsAlive)
             {
                 Console.WriteLine("\n\n====================================");
-                Medillo.Attack(Orbeast);
+                atlas.Attack(Orbeast);
                 Thread.Sleep(1000);
-                Orbeast.Attack(Medillo);
+                Orbeast.Attack(atlas);
                 Thread.Sleep(1000);
                 Console.WriteLine("------------------------------------");
 

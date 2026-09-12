@@ -20,9 +20,9 @@ namespace BattleArena.Warriors
         {
             var totalDamage = target.AttackPower - Shield;
             TakeDamage(totalDamage);
-            Console.WriteLine($"\t->{Name}: yayakapin kita {target.Name}!");
+            Console.WriteLine($"\t->{Name}: frozen {target.Name}!");
             Thread.Sleep(1000);
-            Console.WriteLine($"\t->{target.Name}: Yakapin moko ng madiin! ");
+            Console.WriteLine($"\t->{target.Name}: raahh ");
             Thread.Sleep(1000);
             if (target.IsAlive)
                 Console.WriteLine($"\t->{target.Name}: yown! ");
