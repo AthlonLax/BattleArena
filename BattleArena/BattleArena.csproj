@@ -43,12 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Warriors\Fighter.cs" />
+    <Compile Include="BattleArena.cs" />
+    <Compile Include="Combat\DamageInfo.cs" />
+    <Compile Include="Abilities\IDefender.cs" />
+    <Compile Include="Abilities\IHealable.cs" />
+    <Compile Include="Abilities\IHealCaster.cs" />
+    <Compile Include="Abilities\ISpellCaster.cs" />
+    <Compile Include="Combat\TurnEntry.cs" />
+    <Compile Include="Enums\TeamType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Warriors\Marksman.cs" />
-    <Compile Include="Warriors\Tank.cs" />
+    <Compile Include="Warriors\Characters\Ml\RafaelaTete.cs" />
+    <Compile Include="Warriors\Characters\Ml\Roblox.cs" />
+    <Compile Include="Warriors\Characters\Real\AdolfoASS.cs" />
+    <Compile Include="Warriors\Characters\Real\Agoot.cs" />
+    <Compile Include="Warriors\Characters\Ml\Hayabutaw.cs" />
+    <Compile Include="Warriors\Characters\Ml\Balmond.cs" />
+    <Compile Include="Warriors\Characters\Real\Aaron.cs" />
+    <Compile Include="Warriors\Characters\Real\Medillo.cs" />
+    <Compile Include="Warriors\Characters\Real\Orbeast.cs" />
+    <Compile Include="Warriors\Characters\Ml\Tigreal.cs" />
     <Compile Include="Warriors\Warrior.cs" />
+    <Compile Include="Enums\WarriorType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
