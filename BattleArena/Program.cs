@@ -19,8 +19,7 @@ namespace BattleArena
             var Medillo = new Medillo(100, 10, 15, 30, TeamType.A);
             var Aaron = new Aaron(120, 15, 10, 20, TeamType.A);
             var AdolfoASS = new AdolfoASS(100, 20, 15, 10, TeamType.A);
-
-            // Mga Taong astig
+            // Mga Taong mobile legends
             var Balmond = new Balmond(120, 15, 10, 30, TeamType.B);
             var Hayabutaw = new Hayabutaw(100, 20, 15, 10, TeamType.B);
             var Tigreal = new Tigreal(150, 10, 20, 15, TeamType.B);
