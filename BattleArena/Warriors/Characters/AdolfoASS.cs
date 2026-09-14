@@ -27,9 +27,6 @@ namespace BattleArena.Warriors.Characters
 
             TakeDamage(dmginfo);
 
-            Thread.Sleep(1000);
-            Console.WriteLine($"->* Damage Info: {dmginfo.TotalAmountDamage}");
-            Console.WriteLine($"->* Target Health (approx): {target.Health}");
         }
     }
 }

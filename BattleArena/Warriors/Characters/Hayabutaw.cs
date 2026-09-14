@@ -20,17 +20,11 @@ namespace BattleArena.Warriors.Characters
             var dmginfo = new DamageInfo(AttackPower, "Backstab", HasCriticalChance, this);
             TakeDamage(dmginfo);
 
-            Console.WriteLine($"->{Name}: Silent strike on {target.Name}...");
+            Console.WriteLine($"->{Name}: Silent Strike {target.Name}...");
             Thread.Sleep(1000);
 
             if (dmginfo.IsCritical)
                 Console.WriteLine($"-> Critical! Damage x{CritMultiplier}");
-
-            TakeDamage(dmginfo);
-
-            Thread.Sleep(1000);
-            Console.WriteLine($"->* Damage Info: {dmginfo.TotalAmountDamage}");
-            Console.WriteLine($"->* Target Health (approx): {target.Health}");
         }
     }
 }

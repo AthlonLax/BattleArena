@@ -22,7 +22,6 @@ namespace BattleArena.Warriors.Characters
         public override void Attack(Warrior target)
         {
             var dmginfo = new DamageInfo(AttackPower, "heal", HasCriticalChance, this);
-            TakeDamage(dmginfo);
 
             Console.WriteLine($"->{Name}: Lasapin mo yung heal ko {target.Name}!");
 

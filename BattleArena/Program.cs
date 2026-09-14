@@ -14,17 +14,17 @@ namespace BattleArena
         static void Main(string[] args)
         {
             // Mga Taong kupal
-            var Orbeast = new Orbeast(100, 30, 25, 10, TeamType.A);
-            var Agoot = new Agoot(150, 20, 15, 10, TeamType.A);
-            var Medillo = new Medillo(100, 10, 15, 30, TeamType.A);
-            var Aaron = new Aaron(120, 15, 10, 20, TeamType.A);
-            var AdolfoASS = new AdolfoASS(100, 20, 15, 10, TeamType.A);
+            var Orbeast = new Orbeast(100, 30, 25, 8, TeamType.A);
+            var Agoot = new Agoot(150, 20, 15, 7, TeamType.A);
+            var Medillo = new Medillo(100, 10, 15, 6, TeamType.A);
+            var Aaron = new Aaron(120, 15, 10, 8, TeamType.A);
+            var AdolfoASS = new AdolfoASS(100, 20, 15, 9, TeamType.A);
             // Mga Taong mobile legends
-            var Balmond = new Balmond(120, 15, 10, 30, TeamType.B);
-            var Hayabutaw = new Hayabutaw(100, 20, 15, 10, TeamType.B);
-            var Tigreal = new Tigreal(150, 10, 20, 15, TeamType.B);
-            var Roblox = new Roblox(100, 15, 10, 20, TeamType.B);
-            var Rafaela = new RafaelaTete(120, 10, 15, 30, TeamType.B);
+            var Balmond = new Balmond(120, 15, 10, 8, TeamType.B);
+            var Hayabutaw = new Hayabutaw(100, 20, 15, 9, TeamType.B);
+            var Tigreal = new Tigreal(150, 10, 20, 7, TeamType.B);
+            var Roblox = new Roblox(100, 15, 10, 8, TeamType.B);
+            var Rafaela = new RafaelaTete(120, 10, 15, 6, TeamType.B);
 
 
             BattleArena.AddWarrior(Medillo);

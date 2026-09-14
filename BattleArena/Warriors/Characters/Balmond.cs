@@ -37,10 +37,6 @@ namespace BattleArena.Warriors.Characters
             if (target.IsAlive)
                 Console.WriteLine($"\t->{target.Name}: sarap mo {target.Name}");
 
-            Thread.Sleep(1000);
-            Console.WriteLine($"\t->* Damange Taken: {target}");
-            Console.WriteLine($"\t->* Health Remaining: {target.Health}");
-
         }
 
     }
